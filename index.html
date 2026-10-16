@@ -1,142 +1,72 @@
 <!doctype html>
-<html lang="en" class="has-navbar-fixed-top">
-
+<html lang="vi">
 <head>
-  <meta charset="utf-8">
-  <title>lazarusholic</title>
-  <meta name="description" content="Lazarus is a notorious threat actor since 2009.">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="refresh" content="5;URL='https://lazarus.day'" />
-
-  <meta property="og:title" content="lazarusholic" />
-  <meta property="og:description" content="Lazarus is a notorious threat actor since 2009." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://lazarusholic.github.io" />
-  <meta property="og:image" content="https://lazarusholic.github.io/img/diablo.jpg" />
-  <meta name="twitter:card" content="summary" />
-
-  <link rel="manifest" href="/site.webmanifest">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css" integrity="sha512-IgmDkwzs96t4SrChW29No3NXBIBv8baW490zk5aXvhCD8vuZM3yUSkbyTBcXohkySecyzIrUwiF/qV0cuPcL3Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis-network.min.css" integrity="sha512-NJXM8vzWgDcBy9SCUTJXYnNO43sZV3pfLWWZMFTuCtEUIOcznk+AMpH6N3XruxavYfMeMmjrzDMEQ6psRh/6Hw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <link rel="stylesheet" href="/css/style.min.css">
-  <meta name="theme-color" content="#000">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7952942309073227" crossorigin="anonymous"></script>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f7f6">
+<meta name="description" content="HACK TODAY — không gian nghiên cứu, tra cứu và trực quan hóa thông tin tình báo an ninh mạng về Lazarus và các nhóm APT liên quan.">
+<title>HACK TODAY | Hồ sơ Lazarus & Tình báo an ninh mạng</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap&subset=vietnamese" rel="stylesheet">
+<style>
+:root{--bg:#f5f7f6;--paper:#fff;--ink:#122021;--muted:#687879;--line:#dae4df;--green:#087f52;--pale:#e7f6ee;--red:#cf4351;--shadow:0 16px 42px rgba(22,49,43,.06)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);font-family:"Be Vietnam Pro",Arial,sans-serif;color:var(--ink);font-size:14px}button,input{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #71d8ab;outline-offset:3px}.mono,.eyebrow,.tag,.stat b,.filter button,.terminal,.asidehead{font-family:"IBM Plex Mono",monospace}
+.shell{max-width:1500px;margin:auto;display:grid;grid-template-columns:248px minmax(0,1fr);min-height:100vh}
+.sidebar{padding:28px 19px;border-right:1px solid var(--line);background:#fafcfb;position:sticky;top:0;height:100vh;display:flex;flex-direction:column}
+.brand{display:flex;gap:12px;align-items:center;margin:3px 8px 42px}.mark{display:grid;place-items:center;width:44px;height:44px;background:var(--ink);color:#aaffce;border-radius:12px;font-size:25px;font-family:monospace;font-weight:bold;box-shadow:5px 5px 0 #a7eac7}.brand strong{display:block;font-size:18px;letter-spacing:-.9px}.brand small{color:var(--muted);font-size:10px;letter-spacing:2px}.asidehead{margin:22px 11px 10px;color:#8b9994;letter-spacing:1.4px;font-size:10px;text-transform:uppercase}.navlink{display:flex;align-items:center;gap:12px;padding:13px 14px;margin:3px 0;border-radius:10px;color:#526562;font-weight:600;font-size:12px;transition:.15s}.navlink:hover,.navlink.active{background:var(--pale);color:var(--green)}.navlink .ico{font-size:18px;width:22px;text-align:center}.spacer{flex:1}.sidefoot{border:1px solid var(--line);background:white;padding:16px;border-radius:14px;color:var(--muted);font-size:11px;line-height:1.8}.online{display:inline-block;width:7px;height:7px;background:#14b87a;border-radius:50%;box-shadow:0 0 0 4px #dbf7ea;margin-right:8px}
+.main{min-width:0;padding:0 38px 48px}.topbar{height:80px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line)}.crumb{color:var(--muted);font-family:"IBM Plex Mono",monospace;font-size:11px}.crumb b{color:var(--green)}.topactions{display:flex;align-items:center;gap:14px}.tiny{font:11px "IBM Plex Mono",monospace;color:var(--muted)}.github{border:1px solid var(--line);padding:10px 14px;border-radius:9px;background:white;font-size:12px;font-weight:700}
+.hero{margin-top:30px;background:var(--ink);border-radius:20px;padding:42px 44px;color:#fff;position:relative;overflow:hidden;min-height:260px}.hero::before{content:"";position:absolute;width:380px;height:380px;border:1px solid #42665d;right:-115px;top:-80px;border-radius:50%;box-shadow:0 0 0 50px rgba(51,107,85,.13),0 0 0 100px rgba(51,107,85,.10)}.hero::after{content:"01 / OSINT";position:absolute;right:42px;bottom:24px;color:#a9f2ce;letter-spacing:3px;font:11px "IBM Plex Mono",monospace}.eyebrow{color:#76e1af;font-size:11px;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(32px,4.3vw,59px);line-height:1.12;letter-spacing:-2.5px;margin:18px 0 14px;max-width:850px;position:relative}.hero h1 span{color:#83efb7}.hero p{color:#b6c9c5;line-height:1.9;max-width:630px;margin:0 0 24px;position:relative}.hero .btn{background:#a4f0c5;border:0;padding:12px 20px;border-radius:8px;color:#0f3026;font-weight:800}.hero .ghost{border:1px solid #526f66;background:transparent;color:white;margin-left:9px}
+.sectionTitle{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:34px 0 17px}.sectionTitle h2{font-size:20px;letter-spacing:-.6px;margin:0}.sectionTitle small{color:var(--muted);font:11px "IBM Plex Mono",monospace}.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.stat{border:1px solid var(--line);border-radius:14px;background:white;padding:21px;box-shadow:var(--shadow)}.stat i{font-style:normal;font-size:21px;display:block;margin-bottom:12px}.stat b{display:block;font-size:31px;letter-spacing:-1.8px}.stat span{font-size:12px;color:var(--muted)}.stat em{font-style:normal;color:var(--green);font:10px "IBM Plex Mono",monospace}
+.two{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(260px,1fr);gap:18px}.panel{background:var(--paper);border:1px solid var(--line);border-radius:15px;overflow:hidden;box-shadow:var(--shadow)}.panelHead{padding:20px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:10px}.panelHead h3{margin:0;font-size:14px}.panelHead small{font:10px "IBM Plex Mono",monospace;color:var(--muted)}.search{display:flex;gap:10px;margin-bottom:18px}.search input{flex:1;min-width:0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:15px 16px;outline:0}.search input:focus{border-color:var(--green)}.search button{background:var(--ink);color:white;border:0;border-radius:10px;padding:0 22px;font-weight:700}.filter{display:flex;gap:7px;flex-wrap:wrap;padding:0 0 18px}.filter button{border:1px solid var(--line);background:white;color:#6d7d79;padding:9px 12px;border-radius:7px;font-size:11px}.filter button.active{background:var(--pale);border-color:#9cd9b9;color:var(--green)}.entry{display:flex;gap:16px;align-items:flex-start;padding:19px 22px;border-bottom:1px solid #edf2ef;transition:background .2s}.entry:last-child{border:0}.entry:hover{background:#f8fbf9}.entry .square{background:var(--pale);color:var(--green);font:bold 19px monospace;border-radius:9px;display:grid;place-items:center;width:42px;height:42px;flex:none}.entry h4{margin:0 0 7px;font-size:13px;line-height:1.55}.entry p{margin:0 0 9px;color:var(--muted);font-size:11px;line-height:1.65}.entry .meta{font:10px "IBM Plex Mono",monospace;color:#80918c}.tag{display:inline-block;font-size:10px;color:var(--green);background:var(--pale);padding:5px 8px;margin:3px 3px 0 0;border-radius:5px}.tag.red{background:#fff0f0;color:var(--red)}.actors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:18px}.actor{border:1px solid var(--line);border-radius:11px;padding:16px;background:#fcfefd}.actor b{display:block;margin-bottom:6px}.actor p{margin:0;color:var(--muted);font-size:11px;line-height:1.7}.actor a{color:var(--green);font-weight:700;display:inline-block;margin-top:13px;font-size:11px}.terminal{background:#132421;color:#baf5d2;padding:22px;border-radius:13px;min-height:167px;line-height:2;font-size:11px;overflow:auto}.terminal .dim{color:#72998c}.terminal .cursor{animation:blink 1s step-end infinite}@keyframes blink{50%{opacity:0}}.notice{border-left:3px solid #10a56f;background:#f0faf5;padding:16px 18px;color:#48685b;font-size:11px;line-height:1.9;margin-top:16px;border-radius:0 10px 10px 0}.footer{border-top:1px solid var(--line);padding-top:22px;margin-top:36px;color:var(--muted);font-size:11px;line-height:2}.footer a{color:var(--green)}.mobileToggle{display:none}.empty{padding:25px;color:var(--muted);text-align:center}
+@media(max-width:1100px){.shell{grid-template-columns:75px minmax(0,1fr)}.sidebar{padding:20px 10px}.brand{margin:4px auto 32px}.brand div:last-child,.asidehead,.navlink span:last-child,.sidefoot{display:none}.navlink{justify-content:center}.main{padding:0 22px 40px}}@media(max-width:750px){.shell{display:block}.sidebar{position:static;height:auto;padding:12px 18px;flex-direction:row;align-items:center;justify-content:space-between;border-right:0;border-bottom:1px solid var(--line)}.brand{margin:0}.brand div:last-child{display:block}.sidebar nav{display:none;position:absolute;left:0;right:0;top:72px;background:#fff;z-index:9;box-shadow:0 15px 35px #0002;padding:15px}.sidebar nav.open{display:block}.navlink{justify-content:flex-start}.navlink span:last-child{display:inline}.mobileToggle{display:block;background:#fff;border:1px solid var(--line);border-radius:8px;padding:8px 12px}.main{padding:0 15px 30px}.topbar{height:57px}.topactions .tiny{display:none}.hero{padding:29px 22px;min-height:0}.hero h1{letter-spacing:-1px}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.actors{grid-template-columns:1fr}.sectionTitle{align-items:flex-start}.search button{padding:0 13px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+</style>
 </head>
-
 <body>
-  <nav class="navbar is-black is-fixed-top has-bg-image" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/index.html"><img src="/img/lazarusholic.png"></a>
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasic">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div id="navbarBasic" class="navbar-menu">
-      <div class="navbar-start">
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">Family</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="/family.html">Family Tree</a>
-            <hr class="navbar-divider">
-            <a class="navbar-item" href="/andariel.html">Andariel</a>
-            <a class="navbar-item" href="/bluenoroff.html">Bluenoroff</a>
-            <a class="navbar-item" href="/kimsuky.html">Kimsuky</a>
-            <a class="navbar-item" href="/scarcruft.html">Scarcruft</a>
-          </div>
-        </div>
-        <a class="navbar-item" href="/timeline.html">Timeline</a>
-      </div>
-      <div class="navbar-end">
-      </div>
-    </div>
-  </nav>
-
-  <section class="section hero has-bg-image">
-    <div class="hero-body">
-      <p class="title has-text-white">Lazarus</p>
-      <p class="subtitle has-text-white">
-        a notorious threat actor since 2009
-      </p>
-    </div>
-  </section>
-  <section class="section">
-  <article class="message is-danger">
-    <div class="message-body">
-      This page will no longer be updated, so change your bookmarks to <a href="https://lazarus.day">https://lazarus.day</a>.
-    </div>
-  </article>
-</section>
-  <section class="section">
-    <div class="columns">
-      <div class="column">
-        <div class="box">
-          <b>Lazarus</b> Group (also known by other monikers such as Guardians of Peace or Whois Team) is a cybercrime group made up of an unknown number of individuals. While not much is known about the <b>Lazarus</b> Group, researchers have attributed many cyberattacks to them over the last decade. Originally a criminal group, the group has now been designated as an advanced persistent threat due to intended nature, threat, and wide array of methods used when conducting an operation. Names given by cybersecurity firms include HIDDEN COBRA (by the United States Intelligence Community) and Zinc (by Microsoft).
-          <hr>
-          from <a href="https://en.wikipedia.org/wiki/Lazarus_Group">Wikipedia</a>
-        </div>
-        <div class="box">
-          <b>Lazarus</b>, Hebrew Eleazar, (“God Has Helped”), either of two figures mentioned in the New Testament. 
-          <br />
-          The miraculous story of <b>Lazarus</b> being brought back to life by Jesus is known from the Gospel According to John (11:1–45). 
-          <br />
-          <b>Lazarus</b> is also the name given by the Gospel According to Luke (16:19–31) to the beggar in the parable of the rich man and <b>Lazarus</b>.
-          <hr>
-          from <a href="https://www.britannica.com/biography/Lazarus-biblical-figure">Britannica</a>(biblical figure)
-        </div>
-        
-      </div>
-      <div class="column">
-        <div class="box">
-          The Archbishop <b>Lazarus</b> was an ambassador from the Zakarum Church and an advisor to King Leoric. 
-          <hr>
-          from <a href="https://www.diablowiki.net/Lazarus">Diablo Wiki</a>
-        </div>
-        
-        <div class="box">
-          <b>Lazarus</b> Group is a threat group that has been attributed to the North Korean government. The group has been active since at least 2009 and was reportedly responsible for the November 2014 destructive wiper attack against Sony Pictures Entertainment as part of a campaign named Operation Blockbuster by Novetta. Malware used by <b>Lazarus</b> Group correlates to other reported campaigns, including Operation Flame, Operation 1Mission, Operation Troy, DarkSeoul, and Ten Days of Rain. In late 2017, <b>Lazarus</b> Group used KillDisk, a disk-wiping tool, in an attack against an online casino based in Central America.
-          <hr>
-          from <a href="https://attack.mitre.org/groups/G0032/">MITRE ATT&CK</a>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="content">
-      <p>
-        <a class="button" href="https://twitter.com/lazarusholic">
-          <span class="icon">
-            <i class="fab fa-twitter"></i>
-          </span>
-          <span>@lazarusholic</span>
-        </a>  
-      </p>
-      <p>
-        <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="lazarusholic" data-color="#FFDD00" data-emoji=""  data-font="Bree" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-      </p>
-      <p>
-        Photo by <a href="https://unsplash.com/@marekpiwnicki?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marek Piwnicki</a> on <a href="https://unsplash.com/s/photos/diablo?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-      </p>
-      <p>
-        <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-      </p>
-    </div>
-  </footer>  
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2Y3BL55Z02"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2Y3BL55Z02');
-  </script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="/js/main.min.js"></script>
-</body>
-
-</html>
+<div class="shell">
+<aside class="sidebar">
+<a href="./" class="brand" aria-label="Hack Today, trang chủ"><div class="mark">⌘</div><div><strong>HACK TODAY</strong><small>THREAT INTELLIGENCE</small></div></a>
+<button class="mobileToggle" id="menuBtn" aria-label="Mở điều hướng" aria-expanded="false">☰</button>
+<nav id="sideNav" aria-label="Điều hướng chính">
+<p class="asidehead">KHÔNG GIAN LÀM VIỆC</p>
+<a href="#tong-quan" class="navlink active"><span class="ico">▦</span><span>Tổng quan</span></a>
+<a href="#ho-so" class="navlink"><span class="ico">◎</span><span>Hồ sơ tác nhân</span></a>
+<a href="#su-kien" class="navlink"><span class="ico">⚑</span><span>Sự kiện an ninh</span></a>
+<a href="#tra-cuu" class="navlink"><span class="ico">⌕</span><span>Tra cứu dữ liệu</span></a>
+<p class="asidehead">NGHIÊN CỨU CHUYÊN SÂU</p>
+<a href="./family.html" class="navlink"><span class="ico">◇</span><span>Sơ đồ nhóm</span></a>
+<a href="./timeline.html" class="navlink"><span class="ico">◷</span><span>Dòng thời gian</span></a>
+<a href="https://lazarus.day/" target="_blank" rel="noopener noreferrer" class="navlink"><span class="ico">↗</span><span>Nguồn tình báo gốc</span></a>
+</nav>
+<div class="spacer"></div><div class="sidefoot"><span class="online"></span> KHO DỮ LIỆU NGHIÊN CỨU<br>Chế độ: tham khảo công khai<br><span class="mono">UTF-8 · TIẾNG VIỆT</span></div>
+</aside>
+<main class="main" id="tong-quan">
+<header class="topbar"><div class="crumb">HỆ THỐNG / <b>BẢNG ĐIỀU KHIỂN</b></div><div class="topactions"><span class="tiny">● PHÂN TÍCH OSINT</span><a class="github" href="https://github.com/xulytiengviet/lazarus" target="_blank" rel="noopener noreferrer">⌘ GitHub ↗</a></div></header>
+<section class="hero"><div class="eyebrow">⌁ Trung tâm tình báo an ninh mạng / Phiên bản tiếng Việt</div><h1>Theo dấu <span>Lazarus.</span><br>Giải mã các mối đe dọa.</h1><p>Tìm hiểu các nhóm tác nhân, chiến dịch và dấu vết tấn công mạng thông qua nguồn mở, theo phong cách HACK TODAY — trực quan, dễ tra cứu và phục vụ nghiên cứu.</p><a href="#tra-cuu" class="btn">⌕ Bắt đầu tra cứu</a><a href="#ho-so" class="btn ghost">Khám phá hồ sơ ↗</a></section>
+<div class="sectionTitle"><h2>Chỉ số từ kho dữ liệu</h2><small id="dataStatus">ĐANG KIỂM TRA DỮ LIỆU...</small></div>
+<section class="stats" aria-label="Các chỉ số"><div class="stat"><i>▤</i><b id="metricReports">—</b><span>Báo cáo nghiên cứu</span></div><div class="stat"><i>◎</i><b id="metricActors">—</b><span>Tác nhân đe dọa</span></div><div class="stat"><i>⚑</i><b id="metricIncidents">—</b><span>Sự kiện được ghi nhận</span></div><div class="stat"><i>⌘</i><b id="metricIocs">—</b><span>Chỉ dấu xâm nhập (IoC)</span></div></section>
+<section id="tra-cuu"><div class="sectionTitle"><h2>Trung tâm tra cứu</h2><small>SEARCH / FILTER / EXPLORE</small></div><form class="search" id="searchForm"><input id="query" type="search" autocomplete="off" aria-label="Từ khóa tìm kiếm" placeholder="Nhập Lazarus, Andariel, Kimsuky, WannaCry..."><button type="submit">Tìm kiếm ↗</button></form><div class="filter" role="group" aria-label="Bộ lọc nội dung"><button type="button" class="active" data-filter="all">Tất cả</button><button type="button" data-filter="actor">Nhóm tác nhân</button><button type="button" data-filter="incident">Sự kiện</button><button type="button" data-filter="report">Nguồn nghiên cứu</button></div></section>
+<div class="two"><section id="su-kien" class="panel"><div class="panelHead"><h3>⌁ Hồ sơ và sự kiện nổi bật</h3><small id="resultCount">DANH SÁCH THAM KHẢO</small></div><div id="results" aria-live="polite"></div></section><div><section id="ho-so" class="panel"><div class="panelHead"><h3>◎ Các nhóm tác nhân</h3><small>APT / THREAT ACTORS</small></div><div class="actors"><div class="actor"><b>LAZARUS GROUP</b><p>Nhóm đe dọa mạng thường được các nguồn nghiên cứu liên hệ với Triều Tiên.</p><a href="./family.html">Xem sơ đồ →</a></div><div class="actor"><b>ANDARIEL</b><p>Một cụm tác nhân được theo dõi trong các chiến dịch xâm nhập mạng.</p><a href="./andariel.html">Chi tiết →</a></div><div class="actor"><b>BLUENOROFF</b><p>Thường được nhắc tới trong các nghiên cứu về tấn công lĩnh vực tài chính.</p><a href="./bluenoroff.html">Chi tiết →</a></div><div class="actor"><b>KIMSUKY</b><p>Được theo dõi trong các nghiên cứu liên quan đến gián điệp mạng và lừa đảo.</p><a href="./kimsuky.html">Chi tiết →</a></div></div></section>
+<div class="sectionTitle"><h2>Nhật ký hệ thống</h2><small>TERMINAL / READ ONLY</small></div><div class="terminal"><div><span class="dim">root@hack-today:~$</span> khởi_tạo --ngôn_ngữ=vi</div><div>✓ Unicode UTF-8 đã sẵn sàng</div><div>✓ Giao diện nghiên cứu đã tải</div><div>✓ Sử dụng dữ liệu công khai và liên kết nguồn</div><div><span class="dim">root@hack-today:~$</span> <span class="cursor">▌</span></div></div><div class="notice"><b>Lưu ý học thuật.</b> Thông tin tại trang này dùng cho nghiên cứu và nhận thức an ninh mạng. Các sự kiện được nêu có thể cần đối chiếu với nguồn gốc; chỉ số không đồng nghĩa dữ liệu thời gian thực.</div></div></div>
+<footer class="footer">HACK TODAY · Nghiên cứu tình báo an ninh mạng · Giao diện tiếng Việt do Long Ngo thiết kế.<br>Dữ liệu và tài liệu tham khảo: <a href="https://lazarus.day/" target="_blank" rel="noopener noreferrer">lazarus.day ↗</a> · <a href="https://attack.mitre.org/groups/G0032/" target="_blank" rel="noopener noreferrer">MITRE ATT&CK ↗</a>. Tôn trọng giấy phép và ghi công nội dung từ các nguồn gốc.</footer>
+</main></div>
+<script>
+"use strict";
+const records=[
+{type:"incident",title:"Vụ tấn công Ronin Network",desc:"Sự cố liên quan đến cầu nối blockchain Ronin năm 2022, được nhiều nguồn nghiên cứu an ninh mạng phân tích.",date:"2022",tags:["Blockchain","Điều tra"],url:"https://www.fbi.gov/news/press-releases/fbi-statement-on-attribution-of-malicious-cyber-activity-posed-by-the-democratic-peoples-republic-of-korea"},
+{type:"incident",title:"Mã độc tống tiền WannaCry",desc:"Chiến dịch mã độc tống tiền lan rộng năm 2017; nhiều đánh giá liên hệ hoạt động với Lazarus.",date:"2017",tags:["Mã độc","Ransomware"],url:"https://www.cisa.gov/news-events/alerts/2017/05/12/indicators-associated-wannacry-ransomware"},
+{type:"incident",title:"Vụ tấn công Sony Pictures",desc:"Sự cố an ninh mạng năm 2014, một dấu mốc thường được nhắc đến trong hồ sơ lịch sử Lazarus.",date:"2014",tags:["Lịch sử","Xâm nhập"],url:"https://attack.mitre.org/groups/G0032/"},
+{type:"actor",title:"Lazarus Group",desc:"Hồ sơ tổng quan và mối liên hệ giữa các tên gọi, kỹ thuật và chiến dịch.",date:"Hồ sơ",tags:["APT","Lazarus"],url:"./family.html"},
+{type:"actor",title:"Andariel",desc:"Khám phá hồ sơ nhóm, các chiến dịch và quan hệ trong tập dữ liệu nguồn.",date:"Hồ sơ",tags:["APT"],url:"./andariel.html"},
+{type:"actor",title:"Bluenoroff",desc:"Tư liệu về các chiến dịch liên quan đến hoạt động tấn công nhằm vào tài chính.",date:"Hồ sơ",tags:["APT","Tài chính"],url:"./bluenoroff.html"},
+{type:"actor",title:"Kimsuky",desc:"Hồ sơ nhóm hoạt động gián điệp mạng và kỹ thuật lừa đảo theo các báo cáo công khai.",date:"Hồ sơ",tags:["APT","Gián điệp mạng"],url:"./kimsuky.html"},
+{type:"report",title:"MITRE ATT&CK — G0032",desc:"Tài liệu kỹ thuật tham khảo về Lazarus Group và các kỹ thuật được ghi nhận.",date:"Nguồn ngoài",tags:["MITRE","Kỹ thuật"],url:"https://attack.mitre.org/groups/G0032/"},
+{type:"report",title:"Lazarus.day — kho tình báo nguồn mở",desc:"Tra cứu báo cáo, tác nhân, sự kiện và chỉ dấu xâm nhập từ dự án nghiên cứu gốc.",date:"Nguồn ngoài",tags:["OSINT","IoC"],url:"https://lazarus.day/"}
+];
+const root=document.getElementById("results"),counter=document.getElementById("resultCount"),search=document.getElementById("query");let filter="all";
+const clean=s=>(s||"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/đ/g,"d").replace(/Đ/g,"D").toLowerCase();
+function render(){const q=clean(search.value.trim());const list=records.filter(r=>(filter==="all"||r.type===filter)&&clean([r.title,r.desc,r.date,...r.tags].join(" ")).includes(q));root.replaceChildren();counter.textContent=list.length+" KẾT QUẢ";if(!list.length){const p=document.createElement("p");p.className="empty";p.textContent="Không tìm thấy kết quả phù hợp. Hãy thử một từ khóa khác.";root.append(p);return}for(const r of list){const a=document.createElement("a");a.className="entry";a.href=r.url;if(/^https?:/.test(r.url)){a.target="_blank";a.rel="noopener noreferrer"}const icon=document.createElement("div");icon.className="square";icon.textContent=r.type==="actor"?"◎":r.type==="incident"?"⚑":"▤";const body=document.createElement("div"),h=document.createElement("h4"),p=document.createElement("p"),meta=document.createElement("div");h.textContent=r.title+" ↗";p.textContent=r.desc;meta.className="meta";meta.textContent=r.date+" · "+(r.type==="actor"?"TÁC NHÂN":r.type==="incident"?"SỰ KIỆN":"BÁO CÁO");body.append(h,p,meta);for(const t of r.tags){const tag=document.createElement("span");tag.className="tag";tag.textContent="#"+t;body.append(tag)}a.append(icon,body);root.append(a)}}
+document.getElementById("searchForm").addEventListener("submit",e=>{e.preventDefault();render()});search.addEventListener("input",render);document.querySelectorAll("[data-filter]").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll("[data-filter]").forEach(x=>x.classList.remove("active"));b.classList.add("active");filter=b.dataset.filter;render()}));document.getElementById("menuBtn").addEventListener("click",()=>{const nav=document.getElementById("sideNav"),show=nav.classList.toggle("open");document.getElementById("menuBtn").setAttribute("aria-expanded",String(show))});document.querySelectorAll("#sideNav a").forEach(a=>a.addEventListener("click",()=>document.getElementById("sideNav").classList.remove("open")));
+async function loadMetrics(){const status=document.getElementById("dataStatus");try{const res=await fetch("./data/numbers.json",{cache:"no-store"});if(!res.ok)throw Error("HTTP "+res.status);const data=await res.json();const fields={metricReports:["reports","report"],metricActors:["actors","actor"],metricIncidents:["incidents","incident"],metricIocs:["iocs","ioc","indicators"]};let count=0;for(const [id,keys]of Object.entries(fields)){const found=keys.map(k=>data[k]).find(v=>typeof v==="number"||typeof v==="string"&&/^\d+$/.test(v));if(found!==undefined){document.getElementById(id).textContent=Number(found).toLocaleString("vi-VN");count++}}status.textContent=count?"NGUỒN: DATA/NUMBERS.JSON · LƯU TRỮ":"CHƯA CÓ ĐỊNH DẠNG CHỈ SỐ PHÙ HỢP"}catch{status.textContent="CHƯA TẢI ĐƯỢC DỮ LIỆU LƯU TRỮ"}}}
+render();loadMetrics();
+</script>
+</body></html>
